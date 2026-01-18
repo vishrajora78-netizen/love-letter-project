@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- FLOATING BACKGROUND -->
+<div class="floating-bg">
+  <span class="float heart">💗</span>
+  <span class="float heart">💖</span>
+  <span class="float heart">💕</span>
+  <span class="float dot"></span>
+  <span class="float dot"></span>
+  <span class="float dot"></span>
+</div>
+
+<!-- ================= SCENE 1 ================= -->
+<section id="scene-1" class="scene scene-intro">
+
+  <div class="intro-box">
+
+    <!-- HEADER BAR -->
+    <div class="intro-header">
+      <div class="header-dots">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+
+      <h1 class="intro-title">A Note for You...❤️</h1>
+
+      <img src="images/image1.png" class="header-sticker" alt="sticker">
+    </div>
+
+    <hr class="intro-divider">
+
+    <!-- BODY -->
+    <p class="intro-hello">Hey Love! 💕</p>
+
+    <p class="intro-text">
+      I wanted to do something special for you,<br>
+      so I made something special just for you...
+    </p>
+
+    <p class="intro-click">
+      Click below to see what it is! ✨
+    </p>
+
+    <div class="intro-btn-wrap">
+      <img src="images/image2.png" class="btn-sticker" alt="sticker">
+      <button class="primary-btn">Open My Heart ✨</button>
+    </div>
+
+  </div>
+
+  <!-- FOOTER TEXT (OUTSIDE BOX) -->
+  <p class="intro-footer">
+    Made with love, only for you 💕
+  </p>
+
+</section>
+<!-- ================= SCENE 2 : LOVE LETTER ================= -->
+<section id="scene-2" class="scene scene-letter">
+
+  <!-- TOP HEADING (no box) -->
+  <div class="letter-top">
+    <h2 class="letter-title">A Love Letter 💌</h2>
+    <p class="letter-subtitle">From my heart to yours ✨</p>
+  </div>
+
+  <!-- OUTLINE BOX -->
+  <div class="letter-outline-box">
+
+    <!-- ENVELOPE (INITIAL STAGE) -->
+    <div class="envelope">
+
+      <div class="envelope-flap"></div>
+      <div class="envelope-body"></div>
+      <div class="envelope-paper"></div>
+
+      <!-- HEART STICKER -->
+      <div class="envelope-sticker">💌</div>
+    </div>
+
+    <p class="open-text">Click to open the envelope</p>
+
+    <button class="delivery-btn">
+      Special Delivery ✨
+    </button>
+
+  </div>
+
+  <!-- LETTER CONTENT (HIDDEN – JS will show later) -->
+  <div class="letter-content-box">
+
+    <h3 class="sweetest-love">💖 My Sweetest Love</h3>
+
+    <!-- RIGHT STICKER -->
+    <img src="images/image3.png" class="side-sticker" alt="sticker">
+
+    <p class="dearest">My dearest love,</p>
+
+    <p class="letter-text">
+      Every moment with you feels like a beautiful dream that I never want to wake up from.
+      I want you to know that you are the most precious person in my life.
+      Every day with you is a gift, and I'm grateful for every second we share together.
+      You make me want to be the best version of myself.
+    </p>
+
+    <!-- SEAL -->
+    <img src="images/image4.png" class="seal-sticker" alt="seal">
+
+    <p id="withLoveText" class="with-love"></p>
+
+  </div>
+
+  <!-- FOOTER BUTTON -->
+  <button class="continue-btn">
+    Continue To See More ✨
+  </button>
+
+</section>
+<!-- ================= SCENE 3 : DEDICATED PLAYLIST ================= -->
+<section id="scene-3" class="scene scene-playlist">
+
+  <!-- HEADER BOX -->
+  <div class="playlist-header-box">
+    <h2>A Dedicated Playlist For You</h2>
+    <p>I Hope You'll Like It</p>
+  </div>
+
+  <!-- MAIN PLAYER BOX -->
+  <div class="playlist-main-box">
+
+    <p class="playlist-hint">Choose a track to start vibing ✨</p>
+
+    <!-- PLAYER AREA -->
+    <div class="player-box">
+
+      <!-- PREVIEW IMAGE AREA -->
+      <div class="player-image-area">
+        <button class="nav-btn prev">‹</button>
+
+        <div class="player-image">
+          <img src="images/image5.jpg" alt="Tera Mera Pyaar Amar">
+          <div class="play-overlay">▶</div>
+        </div>
+
+        <button class="nav-btn next">›</button>
+      </div>
+
+      <!-- SONG INFO -->
+      <div class="song-info-center">
+        <h3 class="song-title">Tera Mera Pyaar Amar...❤️</h3>
+        <p class="song-quote">
+          Some bonds are so deep that even eternity feels short 🧿
+        </p>
+      </div>
+
+      <!-- INDICATORS -->
+      <div class="song-indicators">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <!-- TIMELINE PLAYER (PLAY MODE) -->
+<div class="timeline-player hidden">
+
+  <div class="timeline-left">
+    <img class="timeline-thumb" src="images/image5.jpg" alt="">
+    <div class="timeline-info">
+      <h4 class="timeline-title">Tera Mera Pyaar Amar</h4>
+      <p class="timeline-quote">
+        Loving you feels like choosing peace.
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-right">
+    <button class="timeline-play">⏸</button>
+    <input type="range" class="timeline-bar" value="0">
+  </div>
+
+</div>
+
+    </div>
+
+    <!-- CONTINUE -->
+    <div class="playlist-footer">
+      <button class="continue-btn" id="scene3Continue">
+        Continue To Next ✨
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= SCENE 4 ================= -->
+<section id="scene-4" class="scene scene-cards">
+
+  <div class="cards-wrapper">
+
+    <div class="cards-header">
+      <h2>Some Special Cards For You...❤️</h2>
+      <p>Click each card to reveal a special message ✨</p>
+    </div>
+
+    <div class="cards-container">
+
+      <!-- CARD 1 -->
+      <div class="flip-card">
+        <div class="flip-inner">
+
+          <div class="flip-front">
+            <div class="image-frame">
+              <img src="images/image8.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="flip-back">
+            <p>
+              Bohat afzal ho tum tumhe nayaab likh du,<br>
+              Yeh nazmein gazlein chordo mein tum par kitaab likh du! ☺️❤️
+            </p>
+            <span class="flip-hint">Tap to flip back</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="flip-card">
+        <div class="flip-inner">
+
+          <div class="flip-front">
+            <div class="image-frame">
+              <img src="images/image9.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="flip-back">
+            <p>
+              Meri nazar ki Talaash ho aap<br>
+              Maine joh Chaha woh Pyaar ho aap,<br>
+              Aap ho toh Duniya hain meri<br>
+              Kaise Kahu ki Sirf Pyaar nahi meri Jaan ho aap! 🫶💞
+            </p>
+            <span class="flip-hint">Tap to flip back</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="flip-card">
+        <div class="flip-inner">
+
+          <div class="flip-front">
+            <div class="image-frame">
+              <img src="images/image10.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="flip-back">
+            <p>
+              Likhu... Toh "lafz" tum ho<br>
+              Sochu... Toh "khayaal" tum ho<br>
+              Maangu... Toh "dua" tum ho<br>
+              Sach kahu... Toh mohabbat tum ho! 🫀❤️‍🔥
+            </p>
+            <span class="flip-hint">Tap to flip back</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="scene-footer">
+      <button class="continue-btn">Continue to Next ✨</button>
+    </footer>
+
+  </div>
+
+</section>
+
+<!-- ================= SCENE 5 : ALL MESSAGES UNLOCKED ================= -->
+
+<section id="scene-5" class="scene">
+
+  <div class="final-unlock-card">
+
+    <p class="celebration">🎉</p>
+
+    <h2>All Messages Unlocked!</h2>
+
+    <p class="unlock-text">
+      Each message is a piece of my heart that belongs to you forever ✨
+    </p>
+
+    <button class="final-letter-btn">
+      Open the Final Letter 💌
+    </button>
+
+    <p class="stay-text">
+      Stay here a bit longer
+    </p>
+
+  </div>
+
+</section>
+
+<!-- ================= SCENE 6 ================= -->
+<section id="scene-6" class="scene scene-final-letter">
+
+  <div class="final-letter-box">
+
+    <div class="final-header">
+      <span>💌</span>
+      <h2>Final Love Letter...</h2>
+    </div>
+
+    <div class="final-content">
+
+      <div class="final-image">
+        <img src="images/image11.png" alt="">
+      </div>
+
+      <div class="final-text">
+        <h3>To My Forever...❤️</h3>
+
+        <p>You are the reason I believe in timing.</p>
+        <p>The reason I believe some people are meant to find each other — no matter the distance, no matter the past.</p>
+        <p>You're my favorite story.</p>
+        <p>My biggest blessing.</p>
+
+        <p>I didn't just fall in love with you.</p>
+        <p>I found home in you.</p>
+        <div class="final-emojis">🫶 🧿 ❤️</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="final-footer">
+    <p>Sealing will finish the experience.</p>
+
+    <div class="final-buttons">
+      <button class="btn-seal">Seal this Letter 💌</button>
+      <button class="btn-restart">Restart</button>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= SCENE 7 : LETTER SEALED ================= -->
+<section id="scene-7" class="scene scene-sealed">
+  <!-- 🔥 ADD THIS (SEAL OVERLAY) -->
+  <div class="seal-overlay">
+    <div class="seal-envelope">💌</div>
+    <p>Sealing your letter...</p>
+  </div>
+  <!-- 🔥 END -->
+
+  <div class="sealed-card">
+
+    <!-- Envelope / Heart Animation Placeholder -->
+    <div class="seal-animation">
+      <div class="seal-icon">💖</div>
+    </div>
+
+    <!-- Content -->
+    <h2 class="sealed-title">Letter Sealed with Love</h2>
+    <p class="sealed-subtitle">I Love You Always</p>
+
+    <div class="sealed-hearts">
+      ♡ ♡ ♡ ♡ ♡ ♡ ♡
+    </div>
+
+    <p class="sealed-sign">Always Yours 💕</p>
+
+    <p class="sealed-date">
+      Since, 10 March - Thrusday , 2022 - 5:14 p.m
+    </p>
+
+    <!-- Buttons -->
+    <div class="sealed-buttons">
+      <button class="btn-again">Experience Again ✨</button>
+      <button class="btn-kiss">Send a Virtual Kiss 💋</button>
+    </div>
+
+  </div>
+
+</section>
+<script src="script.js"></script>
+</body>
+</html>
